@@ -40,6 +40,7 @@ video {
 	right: 0;
 	display: flex;
 	color: white;
+	min-height: 50px;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
@@ -53,11 +54,26 @@ video {
 
 .header-nav {
 	display: flex;
+	color: rgba(255, 255, 255, 0.5);
+	position: relative;
+}
+
+.header-nav p:nth-child(3),
+.header-nav span {
+	color: rgba(255, 255, 255, 1);
+}
+
+.header-nav span {
+	position: absolute;
+	right:0;
+	translate:  -90% -40%;
+	font-size: 40px;
 }
 
 .header-nav p {
 	padding: 0 4px;
 }
+
 
 /* Footer */
 
@@ -67,11 +83,29 @@ footer {
 	right: 0;
 	bottom: 0;
 	color: #fff;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: black;
+	min-height: 80px;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 }
 
+.footer-icon {
+	text-align: center;
+	width: 20%;
+}
+
+.footer-icon i {
+	font-size: 2rem;
+	width: calc(100% / 5);
+}
+
+.footer-icon p {
+	font-size: 0.7rem;
+}
 /* Sidebar */
 .sidebar {
 	padding: 0 16px;
@@ -116,16 +150,6 @@ footer {
 Regole per evidenziare i blocchi 
 da rimuovere una volta concluso
 --------------------- */
-.debug footer {
-	min-height: 100px;
-	border: 2px dashed #fff;
-}
 
-
-
-.debug .reel-header {
-	min-height: 50px;
-	border: 2px dashed #fff;
-}
 
 /* --------------------- */
