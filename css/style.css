@@ -88,17 +88,19 @@ footer {
 	flex-wrap:wrap;
 	align-items: center;
 	color: white;
+	gap: 10px;
+
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 }
 
 
-.sidebar svg {
-	margin-top: 30px;
-	display: inline;
-	flex-shrink: 1;
+.sidebar i {
+	font-size: 30px;
 }
+
+
 
 .channel-pic {
 	flex-grow: 0;
