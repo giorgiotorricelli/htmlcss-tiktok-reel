@@ -9,12 +9,18 @@ body {
 	font-family: 'TikTok Sans', sans-serif;
 }
 
+.container {
+	margin: 0 auto;
+	max-width: 512px;
+}
+
 video {
 	height: 100%;
 	width: 100%;
 	display: block;
 	object-position: center;
 	object-fit: cover;
+	z-index: -1;
 }
 
 .reel-page {
@@ -22,6 +28,7 @@ video {
 	max-width: 512px;
 	min-width: 400px;
 	position: relative;
+	display: flex;
 }
 
 .reel-header {
@@ -31,9 +38,25 @@ video {
 	top: 0;
 	left: 0;
 	right: 0;
+	display: flex;
+	color: white;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+}
+
+.reel-header svg {
+	margin: 0 10px;
+
+}
+
+
+.header-nav {
+	display: flex;
+}
+
+.header-nav p {
+	padding: 0 4px;
 }
 
 /* Footer */
@@ -55,9 +78,36 @@ footer {
 	position: absolute;
 	right: 0;
 	top: 40%;
+	color: white;
+	text-align: center;
+	max-height: 400px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	flex-wrap:wrap;
+	align-items: center;
+	color: white;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+}
+
+
+.sidebar svg {
+	margin-top: 30px;
+	display: inline;
+	flex-shrink: 1;
+}
+
+.channel-pic {
+	flex-grow: 0;
+	max-width: 50px;
+}
+
+.counter {
+	text-align: center;
+	translate: 0 -40%;
 }
 
 /* ---------------------
@@ -69,11 +119,7 @@ da rimuovere una volta concluso
 	border: 2px dashed #fff;
 }
 
-.debug .sidebar {
-	min-width: 80px;
-	min-height: 450px;
-	border: 2px dashed #ff0;
-}
+
 
 .debug .reel-header {
 	min-height: 50px;
